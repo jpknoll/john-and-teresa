@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "font-awesome": "^4.5.0",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "material-colors": "^1.0.0"
   }
 }
