@@ -1,3 +1,7 @@
 .image-divider img {
   width: 100%;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
