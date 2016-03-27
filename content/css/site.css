@@ -3,6 +3,47 @@
   max-width: 100%;
 }
 
+.section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10rem;
+}
+
+.section-header {
+  position: relative;
+  color: white;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.section-leader {
+  height: 100%;
+  width: 140px;
+  background-color: rgba(0,0,0,0.9);
+  padding: 5px;
+}
+
+.section-text {
+  position: absolute;
+  left: 145px;
+  top: 0;
+  height: 100%;
+  width: ;
+  background-color: rgba(0,0,0,0.8);
+  padding: 5px;
+}
+
+#venue {
+  background-image: url('../images/park-winters-estate.jpg');
+}
+
+.text-block {
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+}
+
 .navbar {
   margin-bottom: 0;
 }
