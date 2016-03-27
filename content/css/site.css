@@ -47,3 +47,38 @@
 .navbar {
   margin-bottom: 0;
 }
+
+.row {
+  margin-bottom: 15px;
+}
+
+.tile {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  min-height: 200px;
+  color: white;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.tile.large {
+  min-height: 400px;
+}
+
+.tile.map {
+  height: 200px;
+  border: 0;
+  padding: 0;
+}
+
+#venue-title {
+  background-image: url('../images/park-winters-front.jpg');
+}
+
+#venue-description {
+  background-image: url('../images/park-winters-estate.jpg');
+}
