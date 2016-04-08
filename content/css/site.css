@@ -1,42 +1,5 @@
-.image-divider img {
-  width: 100%;
-  max-width: 100%;
-}
-
-.section {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 10rem;
-}
-
-.section-header {
-  position: relative;
-  color: white;
-  height: 8rem;
-  margin-bottom: 1rem;
-}
-
-.section-leader {
-  height: 100%;
-  width: 140px;
-  background-color: rgba(0,0,0,0.9);
-  padding: 5px;
-}
-
-.section-text {
-  position: absolute;
-  left: 145px;
-  top: 0;
-  height: 100%;
-  width: ;
-  background-color: rgba(0,0,0,0.8);
-  padding: 5px;
-}
-
-#venue {
-  background-image: url('../images/park-winters-estate.jpg');
+body {
+  background-color: black;
 }
 
 .text-block {
@@ -53,9 +16,11 @@
 }
 
 .tile {
+  position:relative;
   border: 1px solid black;
   border-radius: 5px;
   padding: 15px;
+  width: 100%;
   min-height: 200px;
   color: white;
 
@@ -63,16 +28,25 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.9);
+
+  overflow: hidden;
+}
+
+.tile:hover {
+  filter: grayscale(0.5);
 }
 
 .tile.large {
   min-height: 400px;
 }
 
-.tile.map {
-  height: 200px;
-  border: 0;
+.map-container {
   padding: 0;
+}
+
+.map {
+  height: 200px;
+  width: 100%;
 }
 
 #venue-title {
@@ -81,4 +55,20 @@
 
 #venue-description {
   background-image: url('../images/park-winters-estate.jpg');
+}
+
+#lodging-title {
+  background-image: url('../images/lodging-front.jpg');
+}
+
+#lodging-western {
+  background-image: url('../images/western-front.jpg');
+}
+
+#lodging-hilton {
+  background-image: url('../images/hallmark-front.jpg');
+}
+
+#registry-amazon {
+  background-image: url('../images/amazon.jpg');
 }
