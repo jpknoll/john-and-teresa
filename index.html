@@ -3,27 +3,19 @@
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="bower_components/material-colors/dist/colors.css" rel="stylesheet">
-
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
   <link href="content/css/site.css" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">John &amp; Teresa</a>
-      </div>
+  <header>
+    <img class="header-logo" src="content/images/brand-logo.jpg" alt="John &amp; Teresa"
+  </header>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-collapse" id="nav">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#venue">Venue <span class="sr-only">(current)</span></a></li>
+          <li><a href="#venue">Venue</a></li>
           <li><a href="#ceremony">Ceremony</a></li>
           <li><a href="#lodging">Lodging</a></li>
           <li><a href="#registry">Registry</a></li>
@@ -36,9 +28,11 @@
   <div class="site-body container">
 
     <div id="ceremony" class="section">
-      <img src="" alt="Ceremony" />
-      <div class="section-body">
+      <div class="section-header">
         <h1>Ceremony | <small>St. James Catholic Church</small></h1>
+      </div>
+      <img class="section-image" src="content/images/stjames-front.jpg" alt="Ceremony" />
+      <div class="section-body">
         <div class="row">
           <div class="col-md-6">
             <ul class="details-box">
@@ -74,9 +68,11 @@
     </div>
 
     <div id="reception" class="section">
-      <img src="content/images/park-winters-front.jpg" alt="Reception" />
-      <div class="section-body">
+      <div class="section-header">
         <h1>Reception | <small>Park Winters</small></h1>
+      </div>
+      <img class="section-image" src="content/images/park-winters-front.jpg" alt="Reception" />
+      <div class="section-body">
         <div class="row">
           <div class="col-sm-6">
             <ul class="details-box">
@@ -111,8 +107,10 @@
     </div>
 
     <div id="lodging" class="section">
-      <div class="section-body">
+      <div class="section-header">
         <h1>Lodging | <small>at Davis</small></h1>
+      </div>
+      <div class="section-body">
         <p>
           While staying in Davis,
 
@@ -137,7 +135,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="section">
-          <img src="content/images/western-front.jpg" />
+          <img class="section-image" src="content/images/western-front.jpg" />
           <div class="section-body">
             <h2>Best Western Plus Palm Court Hotel</h2>
             <p>
@@ -164,7 +162,7 @@
 
       <div class="col-lg-6">
         <div class="section">
-          <img src="content/images/hallmark-front.jpg" />
+          <img class="section-image" src="content/images/hallmark-front.jpg" />
           <div class="section-body">
             <h2>Hallmark Inn at Davis</h2>
             <p>
@@ -192,16 +190,19 @@
     </div>
 
     <div id="registry" class="section">
-      <div class="section-body">
+      <div class="section-header">
         <h1>Registry | <small>Amazon</small></h1>
+      </div>
+      <div class="section-body">
         <p>
           John &amp; Teresa are have created a wedding registry with amazon
         </p>
         <a class="btn btn-default" href="https://www.amazon.com/wedding/registry/1OYH7KUVFSPQI" target="_blank">Learn More</a>
       </div>
     </div>
-
   </div>
+
+  <script
 
 </body>
 </html>

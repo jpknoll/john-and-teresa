@@ -1,9 +1,16 @@
 body {
-  background-color: #CFD8DC;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   margin-top: 0;
+  font-weight: 100;
+}
+
+h1 small {
+  font-weight: 100;
+  vertical-align: center;
 }
 
 @media (min-width: 768px) {
@@ -12,15 +19,27 @@ h1 {
   }
 }
 
+.header-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+}
+
 .details-box {
   border: 1px solid black;
   padding: 1.5rem;
   background-color: white;
   min-height: 200px;
+  margin-top: -5rem;
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .details-box li {
   display: block;
+  color: black;
 }
 
 .detail-label {
@@ -33,8 +52,29 @@ h1 {
   background-color: rgba(0,0,0,0.9);
 }
 
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.nav > li {
+  text-align: center;
+}
+
 .navbar {
   margin-bottom: 0;
+}
+
+.navbar-default {
+  border: none;
+  background-color: white;
 }
 
 .row {
@@ -45,15 +85,40 @@ h1 {
   background-color: white;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.section img {
+.section-image {
   width: 100%;
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.section-header {
+  padding: 15px;
+  background-color: #607D8B;
+  color: white;
+}
+
+.section-header h1 {
+  color: white;
+  margin: 0;
+}
+
+.section-header h1 small {
+  color: white;
 }
 
 .section-body {
   padding: 15px;
   position: relative;
+  background-color: #CFD8DC;
+  color: black;
 }
 
 .section-body * {
@@ -61,32 +126,25 @@ z-index: 100;
 }
 
 .section-text {
-  padding-top: 30px;
+
 }
 
-.section-stripe {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  background-color: #ECEFF1;
-  z-index: 50;
+.section-footer {
+  background-color: white;
+  color: black;
 }
 
 .tile {
   position:relative;
   border: 1px solid black;
-  border-radius: 5px;
   padding: 15px;
   width: 100%;
   min-height: 200px;
   color: white;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   overflow: hidden;
 }
@@ -106,28 +164,4 @@ z-index: 100;
 .map {
   height: 200px;
   width: 100%;
-}
-
-#venue-title {
-  background-image: url('../images/park-winters-front.jpg');
-}
-
-#venue-description {
-  background-image: url('../images/park-winters-estate.jpg');
-}
-
-#lodging-title {
-  background-image: url('../images/lodging-front.jpg');
-}
-
-#lodging-western {
-  background-image: url('../images/western-front.jpg');
-}
-
-#lodging-hilton {
-  background-image: url('../images/hallmark-front.jpg');
-}
-
-#registry-amazon {
-  background-image: url('../images/amazon.jpg');
 }
