@@ -13,6 +13,10 @@ h1 small {
   vertical-align: center;
 }
 
+h2 {
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .site-body.container {
     width: 750px;
@@ -90,14 +94,6 @@ h1 small {
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.section-image {
-  width: 100%;
-  box-shadow:
-    0 8px 17px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
 
 .section-header {
   padding: 15px;
@@ -114,6 +110,19 @@ h1 small {
   color: white;
 }
 
+.section-header + .section-image {
+  border-top: 1px solid black;
+}
+
+.section-image {
+  border-bottom: 1px solid black;
+  z-index: 75;
+}
+
+.section-image img {
+  width: 100%;
+}
+
 .section-body {
   padding: 15px;
   position: relative;
@@ -122,7 +131,11 @@ h1 small {
 }
 
 .section-body * {
-z-index: 100;
+  z-index: 100;
+}
+
+.section-body h2 {
+  margin-top: 0;
 }
 
 .section-text {
