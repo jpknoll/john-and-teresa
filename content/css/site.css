@@ -1,9 +1,10 @@
 body {
-  background-color: #CFD8DC;
+  background-color: white;
 }
 
 h1 {
   margin-top: 0;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -51,9 +52,25 @@ h1 {
   width: 100%;
 }
 
+.section-header {
+  padding: 15px;
+  background-color: #303F9F;
+  color: white;
+}
+
+.section-header h1 {
+  color: white;
+}
+
+.section-header h1 small {
+  color: white;
+}
+
 .section-body {
   padding: 15px;
   position: relative;
+  background-color: #3F51B5;
+  color: white;
 }
 
 .section-body * {
