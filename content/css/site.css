@@ -165,27 +165,3 @@ z-index: 100;
   height: 200px;
   width: 100%;
 }
-
-#venue-title {
-  background-image: url('../images/park-winters-front.jpg');
-}
-
-#venue-description {
-  background-image: url('../images/park-winters-estate.jpg');
-}
-
-#lodging-title {
-  background-image: url('../images/lodging-front.jpg');
-}
-
-#lodging-western {
-  background-image: url('../images/western-front.jpg');
-}
-
-#lodging-hilton {
-  background-image: url('../images/hallmark-front.jpg');
-}
-
-#registry-amazon {
-  background-image: url('../images/amazon.jpg');
-}
