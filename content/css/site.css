@@ -36,9 +36,6 @@ h2 {
   background-color: white;
   min-height: 200px;
   margin-top: -5rem;
-  box-shadow:
-    0 8px 17px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .details-box li {
@@ -81,19 +78,13 @@ h2 {
   background-color: white;
 }
 
-.row {
-  margin-bottom: 15px;
-}
-
 .section {
   background-color: white;
-  margin-top: 3rem;
   margin-bottom: 3rem;
   box-shadow:
     0 8px 17px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .section-header {
   padding: 15px;
@@ -139,7 +130,7 @@ h2 {
 }
 
 .section-text {
-
+  margin-top: 15px;
 }
 
 .section-footer {
@@ -153,21 +144,10 @@ h2 {
   padding: 15px;
   width: 100%;
   min-height: 200px;
-  color: white;
 
   box-shadow:
     0 8px 17px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  overflow: hidden;
-}
-
-.tile:hover {
-  filter: grayscale(0.5);
-}
-
-.tile.large {
-  min-height: 400px;
 }
 
 .map-container {
@@ -177,4 +157,8 @@ h2 {
 .map {
   height: 200px;
   width: 100%;
+}
+
+address {
+  margin-bottom: 0;
 }
