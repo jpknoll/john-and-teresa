@@ -10,7 +10,7 @@ h1 {
 
 h1 small {
   font-weight: 100;
-  margin-bottom: 0.5rem;
+  vertical-align: center;
 }
 
 @media (min-width: 768px) {
@@ -60,7 +60,6 @@ h1 small {
   box-shadow:
     0 8px 17px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .section-image {
@@ -110,16 +109,14 @@ z-index: 100;
 .tile {
   position:relative;
   border: 1px solid black;
-  border-radius: 5px;
   padding: 15px;
   width: 100%;
   min-height: 200px;
   color: white;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow:
+    0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   overflow: hidden;
 }
