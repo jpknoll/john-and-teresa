@@ -1,6 +1,8 @@
 <html>
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="bower_components/glidejs/dist/css/glide.core.min.css" rel="stylesheet">
+  <link href="bower_components/glidejs/dist/css/glide.theme.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
   <link href="content/css/site.css" rel="stylesheet">
 </head>
@@ -20,6 +22,45 @@
           <li><a href="mailto:jpknoll@gmail.com">Contact Us</a></li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="photo-glide" class="glide">
+      <div class="glide__arrows">
+        <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+        <button class="glide__arrow next" data-glide-dir=">">next</button>
+      </div>
+
+      <div class="glide__wrapper">
+        <ul class="glide__track">
+          <li class="glide__slide">
+            <span>
+              <img class="glide-image" src="content/images/first-date.jpg" alt="first date" />
+            </span>
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/minions.jpg" alt="first date" />
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/vegas-waterfall.jpg" alt="first date" />
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/christmas.jpg" alt="first date" />
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/vegas-kiss.jpg" alt="first date" />
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/apple-orchard.jpg" alt="first date" />
+          </li>
+          <li class="glide__slide">
+            <img class="glide-image" src="content/images/vegas-flowers.jpg" alt="first date" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="glide__bullets"></div>
     </div>
   </div>
 
@@ -207,7 +248,15 @@
     </div>
   </div>
 
-  <script
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <script src="bower_components/glidejs/dist/glide.min.js"></script>
 
+  <script>
+    $(function() {
+      $("#photo-glide").glide({
+        type: "carousel",
+      });
+    })
+  </script>
 </body>
 </html>
