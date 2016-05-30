@@ -67,6 +67,7 @@ h2 {
 
 .nav > li {
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .navbar {
@@ -171,6 +172,7 @@ address {
 #photo-glide .glide__arrow {
   background-color: white;
   border-color: black;
+  border-width: 1px;
   color: black;
 }
 
